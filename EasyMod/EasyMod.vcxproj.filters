@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="API Visible">
+      <UniqueIdentifier>{043f2f43-de5b-479a-b18e-dc82ed208626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Internal">
+      <UniqueIdentifier>{1c7a784f-de94-4769-a603-0d6aaf2443eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API Visible\Header Files">
+      <UniqueIdentifier>{ca4638a6-f016-45ac-9683-4873d7ad4ec6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API Visible\Source Files">
+      <UniqueIdentifier>{6d05db82-6129-4b2a-9aa8-9333fafec68c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Internal\Header Files">
+      <UniqueIdentifier>{a2b09bbc-ff7c-415f-834d-07e5a24d1075}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Internal\Source Files">
+      <UniqueIdentifier>{c0d49982-0f06-4c62-bc2f-bacf060f5aa6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ApiObjects.h">
+      <Filter>API Visible\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>API Visible\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawingObjects.h">
+      <Filter>API Visible\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnvironmentApi.h">
+      <Filter>API Visible\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Events.h">
+      <Filter>API Visible\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsApi.h">
+      <Filter>API Visible\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IO.h">
+      <Filter>API Visible\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Script.h">
+      <Filter>API Visible\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Serializable.h">
+      <Filter>API Visible\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowApi.h">
+      <Filter>API Visible\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Internal\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D9Drawer.h">
+      <Filter>Internal\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D9Handler.h">
+      <Filter>Internal\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyWatchDog.h">
+      <Filter>Internal\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KeywordEngine.h">
+      <Filter>Internal\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptLoader.h">
+      <Filter>Internal\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Internal\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Internal\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyModApi.h">
+      <Filter>API Visible\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="prepareconsole.h">
+      <Filter>Internal\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin.h">
+      <Filter>Internal\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PluginManager.h">
+      <Filter>Internal\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClrAssemblyHelper.h">
+      <Filter>Internal\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AppDomainHelper.h">
+      <Filter>Internal\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="console.cpp">
+      <Filter>API Visible\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawingObjects.cpp">
+      <Filter>API Visible\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EasyModApi.cpp">
+      <Filter>API Visible\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnvironmentApi.cpp">
+      <Filter>API Visible\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsApi.cpp">
+      <Filter>API Visible\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IO.cpp">
+      <Filter>API Visible\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Script.cpp">
+      <Filter>API Visible\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowApi.cpp">
+      <Filter>API Visible\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Internal\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D3D9Drawer.cpp">
+      <Filter>Internal\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D3D9Handler.cpp">
+      <Filter>Internal\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Internal\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyWatchDog.cpp">
+      <Filter>Internal\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KeywordEngine.cpp">
+      <Filter>Internal\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptLoader.cpp">
+      <Filter>Internal\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Internal\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin.cpp">
+      <Filter>Internal\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PluginManager.cpp">
+      <Filter>Internal\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClrAssemblyHelper.cpp">
+      <Filter>Internal\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AppDomainHelper.cpp">
+      <Filter>Internal\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
