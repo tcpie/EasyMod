@@ -29,6 +29,7 @@ namespace EasyMod
 
 	void ConsoleApi::registerOwnCmds()
 	{
+		this->RegisterConsoleCommand(gcnew ConsoleCommand("help", "Lists help information", 0, gcnew ConsoleCmdHandler(this, &ConsoleApi::cmd_help)));
 		this->RegisterConsoleCommand(gcnew ConsoleCommand("cmdhelp", "Lists information on console commands.", 1, gcnew ConsoleCmdHandler(this, &ConsoleApi::cmd_cmdhelp)));
 		this->RegisterConsoleCommand(gcnew ConsoleCommand("listcmds", "Lists all available console commands", 0, gcnew ConsoleCmdHandler(this, &ConsoleApi::cmd_listcmds)));
 	}
@@ -50,6 +51,14 @@ namespace EasyMod
 		}
 
 		return nullptr;
+	}
+
+	void ConsoleApi::cmd_help(System::Object^ sender, SerializableConsoleCmdEventArgs^ e)
+	{
+		this->Console->Print("EasyMod by tcpie.\n\n" +
+							 "Help info:\n" +
+							 "You are currently in the console. To get an overview of all available console commands, type '!listcmds'.\n" +
+							 "To get help on a console command, type '!cmdhelp <cmdname>'. Example: '!cmdhelp listcmds'\n");
 	}
 
 	void ConsoleApi::cmd_listcmds(System::Object^ sender, SerializableConsoleCmdEventArgs^ e)
@@ -86,7 +95,7 @@ namespace EasyMod
 
 		System::String^ argc = (cmd->ArgCount >= 0) ? cmd->ArgCount.ToString() : "variable";
 
-		this->console->PrintLine(e->CmdName + ":");
+		this->console->PrintLine(e->Arguments[0] + ":");
 		this->console->PrintLine("    Arg count: " + argc);
 		this->console->PrintLine("    Description:");
 		this->console->Print(cmd->Description);

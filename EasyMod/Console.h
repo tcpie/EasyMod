@@ -15,8 +15,8 @@ You should have received a copy of the GNU Lesser General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef _ICONSOLE_H_
-#define _ICONSOLE_H_
+#ifndef _CONSOLE_H_
+#define _CONSOLE_H_
 
 #include "Events.h"
 #include "Script.h"
@@ -86,6 +86,7 @@ namespace EasyMod
 
 		void registerOwnCmds();
 
+		void cmd_help(System::Object^ sender, SerializableConsoleCmdEventArgs^ e);
 		void cmd_cmdhelp(System::Object^ sender, SerializableConsoleCmdEventArgs^ e);
 		void cmd_listcmds(System::Object^ sender, SerializableConsoleCmdEventArgs^ e);
 
